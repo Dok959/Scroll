@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://kit.fontawesome.com/aee02e7826.js" crossorigin="anonymous" defer></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./app.js" defer></script>
+	</head>
+	<body>
+		<header id="home" class="banner">
+			<nav class="nav nav_center">
+				<div class="nav__wrapper">
+					<div class="nav__header">
+						<img src="./logo.svg" alt="logo" class="logo" />
+						<button class="burger" type="button">
+							<i class="fas fa-bars"></i>
+						</button>
+					</div>
+					<div class="nav__container">
+						<ul class="links">
+							<li><a href="#home" class="nav__link scroll-link">home</a></li>
+							<li><a href="#about" class="nav__link scroll-link">about</a></li>
+							<li><a href="#services" class="nav__link scroll-link">services</a></li>
+							<li><a href="#tours" class="nav__link scroll-link">tours</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<section class="content">
+				<div class="content__wrapper">
+					<h1 class="main-title">scroll project</h1>
+					<p class="main-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, facilis voluptatibus.
+						Nesciunt numquam quod aperiam veritatis delectus praesentium. Provident esse magni minus iste
+						aliquam quos officiis voluptatum laborum, facere odio?
+					</p>
+					<a href="#tours" class="link link_white scroll-link">explore tours</a>
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<section id="about" class="section">
+				<h2 class="section__title">about <span class="section__title_accent">us</span></h2>
+			</section>
+			<section id="services" class="section">
+				<h2 class="section__title">our <span class="section__title_accent">services</span></h2>
+			</section>
+			<section id="tours" class="section">
+				<h2 class="section__title">featured <span class="section__title_accent">tours</span></h2>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p class="footer__info">
+				copyright &copy; backroads travel tours company <span id="date"></span>. all rights reserved
+			</p>
+		</footer>
+
+		<a href="#home" class="top-link scroll-link">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+	</body>
+</html>

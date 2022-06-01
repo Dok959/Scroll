@@ -1,0 +1,221 @@
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f5f8;
+}
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url('../../hero-bcg.jpeg') center / cover no-repeat;
+}
+.nav {
+  background: white;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 800px) {
+  .nav {
+    background: transparent;
+  }
+}
+.nav_fixed {
+  position: fixed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+@media screen and (min-width: 800px) {
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+.burger {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #102a42;
+  transition: all 0.3s linear;
+}
+.burger:hover {
+  color: #40cfd4;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
+  }
+}
+.nav__container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 800px) {
+  .nav__container {
+    height: auto !important;
+  }
+}
+.links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media screen and (min-width: 800px) {
+  .links {
+    display: flex;
+  }
+}
+.nav__link {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #102a42;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  padding: 1rem 0;
+  transition: all 0.3s linear;
+}
+.nav__link:hover {
+  color: #40cfd4;
+}
+@media screen and (min-width: 800px) {
+  .nav__link {
+    color: white;
+    margin: 0 1.5rem;
+  }
+}
+.nav__link_default {
+  color: #102a42;
+}
+.content {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.content__wrapper {
+  text-align: center;
+  color: white;
+}
+.main-title {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+.main-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 40rem;
+  margin: 0 auto 3rem;
+}
+@media screen and (min-width: 800px) {
+  .main-description {
+    max-width: 60rem;
+  }
+}
+.link {
+  border: 2px solid #102a42;
+  color: #102a42;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s linear;
+}
+.link:hover {
+  color: #40cfd4;
+  background-color: white;
+}
+.link_white {
+  border-color: white;
+  color: white;
+}
+.section {
+  height: 80vh;
+  padding-bottom: 5rem;
+}
+.section:nth-child(2n) {
+  background-color: white;
+}
+.section__title {
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  color: #102a42;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+@media screen and (min-width: 800px) {
+  .section__title {
+    font-size: 4rem;
+  }
+}
+.section__title_accent {
+  color: #40cfd4;
+}
+.footer {
+  box-sizing: border-box;
+  background-color: #102a42;
+  padding: 6rem 3rem;
+}
+.footer__info {
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  line-height: 1.5;
+}
+.top-link {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 7%;
+  right: 7%;
+  color: white;
+  background-color: #40cfd4;
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  animation: pulse 2s ease-in-out infinite;
+  border-radius: 0.5rem;
+  visibility: hidden;
+}
+.top-link_show {
+  visibility: visible;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

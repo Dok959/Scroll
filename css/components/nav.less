@@ -1,0 +1,101 @@
+// main: ../style.less, out: false
+
+.nav {
+	background: white;
+	padding: 1.5rem 2rem;
+	width: 100%;
+	box-sizing: border-box;
+
+	@media screen and (min-width: 800px) {
+		background: transparent;
+	}
+}
+
+.nav_fixed {
+	position: fixed;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+.nav__wrapper {
+	@media screen and (min-width: 800px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90vw;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+}
+
+.nav__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	height: 50px;
+}
+
+.burger {
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	font-size: 2.5rem;
+	color: @text-color;
+	transition: @transition;
+
+	&:hover {
+		color: @accent-color;
+	}
+
+	@media screen and (min-width: 800px) {
+		display: none;
+	}
+}
+
+.nav__container {
+	height: 0;
+	overflow: hidden;
+	transition: @transition;
+
+	@media screen and (min-width: 800px) {
+		height: auto !important;
+	}
+}
+
+.links {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	@media screen and (min-width: 800px) {
+		display: flex;
+	}
+}
+
+.nav__link {
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: @text-color;
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: 0.25rem;
+	padding: 1rem 0;
+	transition: @transition;
+
+	&:hover {
+		color: @accent-color;
+	}
+
+	@media screen and (min-width: 800px) {
+		color: white;
+		margin: 0 1.5rem;
+	}
+}
+
+.nav__link_default {
+	color: @text-color;
+}
